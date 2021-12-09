@@ -43,15 +43,6 @@ if (window.location.pathname === '/projeto-dev-passos-magicos/desafio-exemplo.ht
 	}
 	verificarTexto(count);
 
-	const inputVerificar = document.querySelector("#checkbox-menu");
-
-	inputVerificar.addEventListener("click", () => {
-		if (inputVerificar.checked == true) {
-			document.querySelector("header").style.left = "0%";
-		} else {
-			document.querySelector("header").style.left = "100%";
-		}
-	});
 
 	document.querySelector("form button").addEventListener("click", (e) => {
 		const form = document.querySelector("form");
@@ -70,3 +61,13 @@ if (window.location.pathname === '/projeto-dev-passos-magicos/desafio-exemplo.ht
 		document.querySelectorAll(".form-inputs input")[1].value = "";
 	});
 }
+
+const inputVerificar = document.querySelector("#checkbox-menu");
+
+inputVerificar.addEventListener("click", () => {
+    if (inputVerificar.checked == true) {
+        document.querySelector("header").style.left = "0%";
+    } else {
+        document.querySelector("header").style.left = "100%";
+    }
+});
