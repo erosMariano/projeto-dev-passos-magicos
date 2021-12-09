@@ -1,7 +1,3 @@
-@import url("../index/style.css");
-@import url("../desafio/style.css");
-@import url("../desafioExemplo/style.css");
-
 :root {
     --background-section: #0B1035;
     --white: #fff;
@@ -26,7 +22,8 @@
 
 section {
     background: var(--background-section);
-    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 section h2 {
@@ -44,3 +41,5 @@ section .container{
     margin-left: auto;
     margin-right: auto;
 }
+
+
