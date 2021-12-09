@@ -42,9 +42,10 @@ if (window.location.pathname === "/desafio-exemplo.html") {
 		}
 	}
 	verificarTexto(count);
-}
 
-const inputVerificar = document.querySelector("#checkbox-menu");
+
+
+    const inputVerificar = document.querySelector("#checkbox-menu");
 
 inputVerificar.addEventListener("click", () => {
 	if (inputVerificar.checked == true) {
@@ -71,4 +72,7 @@ document.querySelector(".modal button").addEventListener("click", () => {
     document.querySelectorAll(".form-inputs input")[1].value = "";
 
 });
+
+
+}
 
