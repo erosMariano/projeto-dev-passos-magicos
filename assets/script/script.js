@@ -1,4 +1,4 @@
-if (window.location.pathname === "/desafio-exemplo.html") {
+if (window.location.pathname === '/projeto-dev-passos-magicos/desafio-exemplo.html') {
 	const btns = document.querySelectorAll(".trocar-desafio button");
 	let count = 1;
 
@@ -43,36 +43,30 @@ if (window.location.pathname === "/desafio-exemplo.html") {
 	}
 	verificarTexto(count);
 
+	const inputVerificar = document.querySelector("#checkbox-menu");
 
+	inputVerificar.addEventListener("click", () => {
+		if (inputVerificar.checked == true) {
+			document.querySelector("header").style.left = "0%";
+		} else {
+			document.querySelector("header").style.left = "100%";
+		}
+	});
 
-    const inputVerificar = document.querySelector("#checkbox-menu");
+	document.querySelector("form button").addEventListener("click", (e) => {
+		const form = document.querySelector("form");
+		if (form.checkValidity()) {
+			e.preventDefault();
+			document.querySelector(".modal").style.opacity = 1;
+			document.querySelector(".modal").style.pointerEvents = "All";
+		}
+	});
 
-inputVerificar.addEventListener("click", () => {
-	if (inputVerificar.checked == true) {
-		document.querySelector("header").style.left = "0%";
-	} else {
-		document.querySelector("header").style.left = "100%";
-	}
-});
+	document.querySelector(".modal button").addEventListener("click", () => {
+		document.querySelector(".modal").style.opacity = 0;
+		document.querySelector(".modal").style.pointerEvents = "none";
 
-document.querySelector("form button").addEventListener("click", (e) => {
-	const form = document.querySelector("form");
-	if (form.checkValidity()) {
-        e.preventDefault()
-		document.querySelector(".modal").style.opacity = 1;
-		document.querySelector(".modal").style.pointerEvents = "All";
-	}
-});
-
-document.querySelector(".modal button").addEventListener("click", () => {
-	document.querySelector(".modal").style.opacity = 0;
-	document.querySelector(".modal").style.pointerEvents = "none";
-
-    document.querySelectorAll(".form-inputs input")[0].value = "";
-    document.querySelectorAll(".form-inputs input")[1].value = "";
-
-});
-
-
+		document.querySelectorAll(".form-inputs input")[0].value = "";
+		document.querySelectorAll(".form-inputs input")[1].value = "";
+	});
 }
-
