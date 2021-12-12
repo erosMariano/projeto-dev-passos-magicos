@@ -1,4 +1,4 @@
-if (window.location.pathname === '/projeto-dev-passos-magicos/desafio-exemplo.html') {
+if (window.location.pathname === '/projeto-dev-passos-magicos/desafio-exemplo.html' || window.location.pathname === '/desafio-exemplo.html') {
 	const btns = document.querySelectorAll(".trocar-desafio button");
 	let count = 1;
 
