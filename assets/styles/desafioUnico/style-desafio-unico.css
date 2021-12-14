@@ -338,10 +338,11 @@ header .container ul a:hover::after {
   }
   .container-btn {
     height: 4%;
-    position: absolute;
+    position: fixed;
     top: 30px;
-    right: 30px;
+    right: 0px;
     display: block;
+    z-index: 1000;
   }
   #checkbox-menu {
     position: absolute;
@@ -353,6 +354,7 @@ header .container ul a:hover::after {
     display: block;
     height: 22px;
     width: 30px;
+    z-index: 1000;
   }
   label span {
     position: absolute;
@@ -394,6 +396,7 @@ header .container ul a:hover::after {
     width: 100%;
     -webkit-transition: .4s;
     transition: .4s;
+    z-index: 1000;
   }
   header .container {
     -webkit-box-orient: vertical;
