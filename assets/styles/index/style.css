@@ -1099,4 +1099,9 @@ section.depoimentos .container .nomeAluno {
     .imagem-computador{
         width: 300px !important;
     }
+    .branco, .amarelo{
+        font-size:2.5rem;
+    }
+
+    
 }
