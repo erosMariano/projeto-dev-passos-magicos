@@ -7,3 +7,4 @@ inputVerificar.addEventListener("click", () => {
         document.querySelector("header").style.left = "100%";
     }
 });
+

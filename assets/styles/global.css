@@ -19,7 +19,9 @@
 }
 
 
-
+html{
+    scroll-behavior: smooth;
+}
 section {
     background: var(--background-section);
     padding-left: 20px;
